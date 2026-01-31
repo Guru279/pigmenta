@@ -1,13 +1,21 @@
-import { Routes , Route } from "react-router-dom";
 
-
-function App(){
+import Navbar from "./components/Navbar"
+import Pinksphere from "./mini_components/Pinksphere"; 
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<h1>Home</h1>} />
-      <Route path="/explore" element={<h1>Explore</h1>}/>
+    <>
       
-    </Routes>
-  )
+
+      <div className="relative">
+       
+      <Pinksphere />
+       <Navbar />
+      </div>
+
+    
+
+    </>
+  );
 }
- export default App;
+
+export default App;
