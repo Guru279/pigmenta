@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
@@ -8,10 +10,11 @@ const Navbar = () => {
       </div>
 
       <div className="flex gap-6 ">
-        <h5>Home</h5>
-        <h5>Contact</h5>
-        <h5>About</h5>
-        <h5>kaisa</h5>
+
+  
+        <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
       </div>
 
       <div className="flex">
