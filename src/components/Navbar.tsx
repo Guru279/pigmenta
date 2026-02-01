@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -19,7 +21,11 @@ const Navbar = () => {
 
       <div className="flex">
         <input placeholder="Search"className="px-3"/>
-        <h4>PO</h4>
+        <FontAwesomeIcon
+  icon={faUserCircle}
+  className="text-2xl cursor-pointer"
+/>
+
       </div>
      </div>
 
