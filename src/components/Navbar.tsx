@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faFaceAngry } from "@fortawesome/free-solid-svg-icons";
+
 
 const Navbar = () => {
   return (
@@ -21,14 +23,17 @@ const Navbar = () => {
 
       <div className="flex">
         <input placeholder="Search"className="px-3"/>
-        <FontAwesomeIcon
-  icon={faUserCircle}
-  className="text-2xl cursor-pointer"
+      <Link to="/profile" className="ml-4">
+        <FontAwesomeIcon icon={faUserCircle} size="2x" />
+      </Link> 
+      
+   <FontAwesomeIcon
+  icon={faFaceAngry}
+  className="text-[32px] text-indigo-600 hover:text-amber-400"
 />
 
       </div>
-     </div>
-
+</div>
       </nav>
     </>
   );

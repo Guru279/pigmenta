@@ -6,6 +6,7 @@ import Bluesquare from "./mini_components/Bluesquare";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import Profile from "./components/Profile";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
   </div>
 
