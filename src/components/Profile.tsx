@@ -1,5 +1,6 @@
 import React from 'react'
-import Artworkcard from './Artworcard';
+import Artworkcard from './Artworkcard.tsx';
+import {profileStats} from '../data/data.ts'
 const Profile = () => {
   return (
     <>
@@ -8,37 +9,13 @@ const Profile = () => {
       <h1 className="text-2xl font-semibold mb-8">Profile</h1>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-        <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} /> <Artworkcard title="Posts" price={24} />
-        <Artworkcard title="Followers" price={1200} />
-        <Artworkcard title="Following" price={180} />
-        <Artworkcard title="Likes" price={9400} />
+       { profileStats.map ((item) => (
+        <Artworkcard 
+                    key={item.id}
+                    title={item.title}
+                    price={item.price}
+                    />
+       ))}
       </div>
     </section> 
 

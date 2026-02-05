@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar"
 import { Routes, Route} from "react-router-dom";
 import Pinksphere from "./mini_components/Pinksphere";
 import Bluesquare from "./mini_components/Bluesquare"; 
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Profile from "./components/Profile";
