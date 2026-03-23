@@ -14,8 +14,8 @@ export interface ArtistInfo {
 export const artists: ArtistInfo[] = [
   {
     id: "a1",
-    name: "Aarav Mehta",
-    location: "Mumbai, India",
+    name: "Aarav Mehta Mehta",
+    location: "india Delhi",
     artworks: [
       { id: "p1", imageUrl: "/art/1.jpg" },
       { id: "p2", imageUrl: "/art/2.jpg" },

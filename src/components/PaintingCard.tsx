@@ -8,7 +8,7 @@ interface PaintingCardProps {
 
 const PaintingCard = ({ imageUrl, artistName, location }: PaintingCardProps) => {
   return (
-    <div className="rounded-xl overflow-hidden">
+    <div className="rounded-xl bg-gray-200 overflow-hidden">
       <img src={imageUrl} alt={artistName} className="w-full h-48 object-cover" />
       <div className="p-3">
         <p className="font-medium">{artistName}</p>

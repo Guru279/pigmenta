@@ -5,7 +5,7 @@ import Pinksphere from "./mini_components/Pinksphere";
 import Bluesquare from "./mini_components/Bluesquare"; 
 import Home from "./pages/Home";
 import Contact from "./components/Contact";
-import About from "./components/About";
+import About from "./pages/About";
 import Profile from "./components/Profile";
 function App() {
   return (

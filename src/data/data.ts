@@ -1,5 +1,5 @@
 export const profileStats = [
-  { id: 1, title: "Posts", price: 24 },
+  { id: 1, title: "Posts", price: 2400 },
   { id: 2, title: "Followers", price: 1200 },
   { id: 3, title: "Following", price: 180 },
   { id: 4, title: "Likes", price: 9400 },
