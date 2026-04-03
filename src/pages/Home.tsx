@@ -1,7 +1,7 @@
 // pages/Home.tsx
 import { artists } from "../data/artistinfo";
 import PaintingCard from "../components/PaintingCard";
-
+import Herosection from "../components/Herosection";
 const Home = () => {
 
   // flatten all paintings
@@ -17,10 +17,13 @@ const Home = () => {
 
 
   return (
-    <section className="px-6 py-10 max-w-7xl mx-auto">
+   <>
+      <Herosection/>
+   
+       <section className="px-6 py-10 max-w-9xl mx-auto">
       <h1 className="text-2xl font-semibold mb-8">Discover Artists</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
         {allPaintings.map((item) => (
           <PaintingCard
             key={item.id}
@@ -31,6 +34,8 @@ const Home = () => {
         ))}
       </div>
     </section>
+   </>
+
   );
 };
 

@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Contact from "./components/Contact";
 import About from "./pages/About";
 import Profile from "./components/Profile";
+
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
     <Pinksphere/>
     <Bluesquare/>
     <Navbar/>
+
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
